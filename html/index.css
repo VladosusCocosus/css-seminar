@@ -1,0 +1,32 @@
+body {
+    font-family: "SF Pro Display", sans-serif;
+}
+
+.sub-title {
+    color: #646464;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.tags-inline {
+    display: inline-block;
+}
+
+.tags-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+/*.tags .tag:nth-child(n) {*/
+/*    background: red;*/
+/*}*/
+
+.tag {
+    background: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
