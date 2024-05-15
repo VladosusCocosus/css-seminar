@@ -1,0 +1,75 @@
+body {
+    font-family: "SF Pro Display", sans-serif;
+}
+
+.wrapper>div {
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 20px 60px;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    background: mediumpurple;
+}
+
+.box.hover:hover {
+    background: purple;
+}
+
+
+.box.active:active {
+    background: purple;
+}
+
+.box.focus:focus {
+    background: purple;
+}
+
+
+.box.visited:visited {
+    background: purple;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.container.first-child div:first-child {
+    background: purple;
+}
+
+.container.last-child div:last-child {
+    background: purple;
+}
+
+.container.nth-2 div:nth-child(2n) {
+    background: purple;
+}
+
+.container.not div:not(.default) {
+    background: purple;
+}
+
+.container.has div:has(p) {
+    background: purple;
+}
+
+.container.selector input[type="button"] {
+    background: purple;
+}
+
+.container.selector div[title="find me"] {
+    background: purple;
+}
+

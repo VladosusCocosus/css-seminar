@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--  Import External css  -->
+    <link rel="stylesheet" href="./index.css">
+
+
+    <!--  Import Tailwind (just for example) -->
+    <!--    <script src="https://cdn.tailwindcss.com"></script>-->
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS Seminar</h1>
+    <!--   Inline CSS example -->
+    <h2 style="color: #646464;">Cascading Style Sheets (CSS) is a simple mechanism for adding style</h2>
+
+
+    <div class="wrapper">
+        <div>
+            <h4>
+                :hover / :active / :focus / :visited
+            </h4>
+
+            <div class="container">
+                <div class="box hover"></div>
+                <div class="box active"></div>
+
+                <!--   Focus work only with buttons and inputs   -->
+                <button class="box focus"></button>
+                <!--   Visited work only with links   -->
+                <a href="https://health-samurai.io" target="_blank" class="box visited"></a>
+            </div>
+        </div>
+
+        <div>
+            <h4>
+                :first-child
+            </h4>
+            <div class="container first-child">
+                <div class="box">i'm first</div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div>
+            <h4>
+                :last-child
+            </h4>
+            <div class="container last-child">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box">i'm last</div>
+            </div>
+        </div>
+
+        <div>
+            <h4>
+                :nth-child
+            </h4>
+            <div class="container nth-2">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+            </div>
+        </div>
+
+        <div>
+            <h4>
+                :not
+            </h4>
+            <div class="container not">
+                <div class="box"></div>
+                <div class="box default">default</div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div>
+            <h4>
+                :has
+            </h4>
+            <div class="container has">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"><p style="color: white">p inside</p></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div>
+            <h4>
+                :[attribute="value"]
+            </h4>
+            <div class="container selector">
+                <input type="text" class="box"></input>
+                <input type="button" class="box"></input>
+
+                <div class="box" title="find me">title</div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

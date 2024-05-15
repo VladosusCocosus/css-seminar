@@ -1,0 +1,63 @@
+body {
+    font-family: "SF Pro Display", sans-serif;
+}
+
+.chat-message {
+    background: #313131;
+    color: white;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.chat-message.my {
+    align-self: flex-end;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.options-container {
+    position: relative;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    width: 100px;
+    box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.05);
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+}
+
+.options-container:hover .options {
+    display: block;
+}
+
+.options .option {
+    background: white;
+}
+
+.options .option:hover {
+    background: #e1e1e1;
+}
+
+.bottom-line {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    padding: 20px 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    color: white;
+    background: black;
+}

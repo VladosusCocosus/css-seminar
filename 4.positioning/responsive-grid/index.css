@@ -1,0 +1,15 @@
+body {
+    font-family: "SF Pro Display", sans-serif;
+}
+
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 60px;
+}
+
+.responsive-grid .responsive-item {
+    height: 60px;
+    background: mediumpurple;
+
+}
