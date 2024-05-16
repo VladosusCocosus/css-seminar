@@ -1,0 +1,15 @@
+body {
+    font-family: "SF Pro Display", sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px
+}
+
+.item {
+    height: 100vh;
+    border: 3px dashed mediumpurple;
+    border-radius: 10px;
+}

@@ -85,8 +85,8 @@ meta name="viewport" content="width=device-width,initial-scale=1" />
 
 Источники:
 * User-agent stylesheets
-* Author stylesheets
 * User stylesheets
+*  Author stylesheets
 
 
 Специфичность: 

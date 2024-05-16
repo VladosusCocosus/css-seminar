@@ -1,0 +1,16 @@
+body {
+    font-family: "SF Pro Display", sans-serif;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 40px
+}
+
+.wrapper {
+    width: 40vw;
+    background: #e1e1e1;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
