@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "SF Pro Display", sans-serif;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+
+    background: mediumpurple;
+}
+
+section {
+    padding: 20px;
+}
+
+header .items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+header .items .item {
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.stories-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+.stories-wrapper div {
+    flex: 1;
+    padding: 30px 20px;
+    border-radius: 16px;
+    border: 1px solid mediumpurple;
+    align-self: stretch;
+}
+
+.stories-wrapper div:first-child {
+    flex: 3;
+}

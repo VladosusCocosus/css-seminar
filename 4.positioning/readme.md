@@ -31,6 +31,8 @@
 ## Flex
 [Visual Cheat Sheet](https://flexbox.malven.co/)
 
+[Красивая дока с визуализацией](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
 
 #### Свойства
 
@@ -102,7 +104,6 @@
 * justify-self , align-self: Эти свойства определяют выравнивание элемента сетки внутри ячейки по оси блока или поперечной оси. Значения могут быть start, end, center, stretch.
 * place-self: обобщенное свойство для justify-self и align-self.
 
-
 ```css
 .item {
     grid-column-start: 1;
@@ -113,20 +114,15 @@
 }
 ```
 
-```css
-grid-template-columns: 100px repeat(auto-fill, 100px) 200px;
-grid-template-columns: 100px repeat(2, 1fr auto) 200px repeat(3, 5fr);
-grid-template-columns: minmax(150px, max-content) repeat(auto-fill, 180px) 15%;
-grid-template-columns: [col1] 100px [col1-end] repeat(auto-fit, [line3] 400px);
-```
+### grid-template-columns
 
 ```css
-grid-template-columns: 200px 1fr 180px;
-grid-template-columns: [linename col1] 250px [line2];
-grid-template-columns: [sidebar] 1fr [content] 2fr;
-grid-template-columns: fit-content(50%);
-grid-template-columns: minmax(200px, 1fr) minmax(100px, 1fr);
-grid-template-columns: repeat(4, 1fr);
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-columns: repeat(6, 200px);
+grid-template-columns: 100px repeat(6, 200px);
+grid-template-columns: 100px repeat(auto-fit, 200px);
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 ```
 
 # [Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
